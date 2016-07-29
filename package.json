@@ -1,0 +1,36 @@
+{
+  "name": "broccoli-swiffer",
+  "version": "0.0.1",
+  "description": "A Broccoli plugin for Swiffer the Dust linter",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint . && mocha test.js",
+    "test:debug": "eslint --rule 'no-debugger:1' . && mocha debug test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jimmmyhchan/broccoli-swiffer"
+  },
+  "keywords": [
+    "broccoli-plugin",
+    "dust",
+    "swiffer",
+    "lint"
+  ],
+  "author": "jimmyhchan@users.noreply.github.com",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "broccoli-persistent-filter": "^1.0.1",
+    "debug": "^2.2.0",
+    "swiffer": "0.0.7"
+  },
+  "devDependencies": {
+    "broccoli": "^0.16.3",
+    "broccoli-test-helpers": "0.0.8",
+    "chai": "^3.3.0",
+    "eslint": "^2.11.1",
+    "mkdirp": "^0.5.1",
+    "mocha": "^2.5.3",
+    "rimraf": "^2.4.2"
+  }
+}
