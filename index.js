@@ -52,7 +52,7 @@ DustLint.prototype.postProcess = function (fromCache) {
       this.formatter(relativePath, lintMessages);
     }
     if (this.throwOnError) {
-      throw new Error('a linting error was found in your templates');
+      throw new Error('broccoli-swiffer: throwOnError was specified and a linting error was found in your templates');
     }
   }
   // return output so that broccoli's output node === input node

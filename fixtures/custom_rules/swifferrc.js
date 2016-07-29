@@ -6,5 +6,13 @@ module.exports = [
       type: '@',
       matches: 'if'
     }
+  },
+  {
+    name: 'no and',
+    description: 'no and allowed',
+    target: {
+      type: '@',
+      matches: 'and'
+    }
   }
 ];

@@ -22,6 +22,14 @@ module.exports = function runDustLint(inputNode, _options) {
   return builder.build().then(function () {
     // put the results into the resolved
     return lintMessages;
+  }).catch(function(e) {
+    console.log('error caught: ' + e);
+    if (options.onErrorMessageCaught) {
+      options.onErrorMessageCaught(e);
+    } else {
+      // re throw to fail tests
+      throw e;
+    }
   }).finally(function() {
     builder.cleanup();
   });
