@@ -22,7 +22,7 @@
   "dependencies": {
     "broccoli-persistent-filter": "^1.0.1",
     "debug": "^2.2.0",
-    "swiffer": "0.0.7"
+    "swiffer": "~0.0.8"
   },
   "devDependencies": {
     "broccoli": "^0.16.3",
