@@ -1,6 +1,6 @@
 {
   "name": "broccoli-swiffer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A Broccoli plugin for Swiffer the Dust linter",
   "main": "index.js",
   "scripts": {
